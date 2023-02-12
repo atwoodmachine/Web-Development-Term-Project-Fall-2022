@@ -1,0 +1,92 @@
+<!--
+Seniz Ozdemir
+11-11-2022
+IT202-001
+Semester Project Phase 2
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta lang="en">
+        <title>Mailing List - The Last Word</title>
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="styles/style.css">
+
+        <script type="text/javascript" language="javascript" src="scripts/bookstore.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>The Last Word</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li> 
+                    <li><a class="active" href="contact.html">Contact Us</a></li> 
+                    <li><a href="create.html">Create</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="center">
+            <h2>Mailing List Form</h2>
+        <div class="mailContainer">
+            <form method="post" action="http://www.randyconnolly.com/tests/process.php" id="forms">
+                <fieldset id="mailFields">
+                    <label for="fname">First Name:<span class="star">*</span></label>
+                    <input id="First name" type="text" name="fName" 
+                    minlength="1" maxlength="30">
+              
+                    <label for="lname">Last Name:<span class="star">*</span></label>
+                    <input id="Surname" type="text" name="lName" 
+                    minlength="1" maxlength="30">
+                
+                    <label for="email">Email:<span class="star">*</span></label>
+                    <input id="Email" type="email" name="email" 
+                    maxlength="40">
+               
+                    <label for="address">Address:<span class="star">*</span></label>
+                    <input id="Address" type="text" name="address" 
+                    minlength="3" maxlength="40">
+
+                    <label for="city">City:<span class="star">*</span></label>
+                    <input id="City" type="text" name="city" 
+                    minlength="3" maxlength="40">
+               
+                    <label for="state">State:<span class="star">*</span></label>
+                    <input id="State" placeholder="e.g. NY" type="text" name="state" minlength="2" 
+                    maxlength="2" pattern="[A-Z][A-Z]">
+              
+                    <label for="zip">Zip Code:<span class="star">*</span></label>
+                    <input id="Zipcode" placeholder="e.g. 12345" type="text" name="zipcode" 
+                    minlength="5" maxlength="5" pattern="[0-9]*">
+               
+                    <label for="hear">How did you hear about us?<span class="star">*</span></label>
+                    <select id="Analytics" name="hear" >
+                        <option disabled selected value> -Select an option- </option>
+                        <option>Friend recommended</option>
+                        <option>Google</option>
+                        <option>Online ad</option>
+                        <option>Radio spot</option>
+                        <option>Yellow pages</option>
+                        <option>Billboard</option>
+                        <option>Other</option>
+                    </select>
+                
+                    <input id="submit" type="submit">
+                </fieldset>
+            </form>
+        </div>
+
+        <h5>Fields marked with <span class="star">*</span> are required.</h5>
+    </section>
+
+  
+
+        <footer>
+            <h6>Seniz Ozdemir<br>11-11-2022<br>IT202-001<br>Semester Project Phase 2</h6>
+        </footer>
+    </body>
+</html>

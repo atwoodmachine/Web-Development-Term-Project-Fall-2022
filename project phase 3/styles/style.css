@@ -1,0 +1,203 @@
+/*
+Seniz Ozdemir
+11-11-2022
+IT202-001
+Semester Project Phase 2
+*/
+
+html{
+    background-color: #fff2d4;
+}
+
+header
+{
+    color: white;
+    background-color: rgb(73, 46, 18);
+    padding: 0.25em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-align: center;
+}
+
+h1
+{
+    font-size: 300%;
+    font-family: "Book Antiqua", serif;
+}
+
+nav
+{
+    background-color: #506C8B;
+    padding: 0.75em;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+}
+
+a:link{
+    color:white;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    background-color: white;
+    color:black;
+}
+.active
+{
+    background-color: #293d53;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#center 
+{
+    text-align: center;
+    border-style: double;
+    border-width: 0.5em;
+    border-radius: 0.5em;
+    margin: auto;
+    width: 80%;
+    background-color: white;
+    font-size: 110%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#intro
+{
+    margin: 5px;
+}
+
+
+img{
+    
+    max-width: 50%;
+    height: auto;
+}
+
+h2{
+    font-size: 200%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.hours
+{
+    font-size: 125%;
+    margin-left:auto;
+    margin-right: auto;
+    padding: .5em;
+    width: 100%;
+
+}
+table.hours tr:nth-child(odd)
+{
+    background-color: #F3E9D4;
+}
+
+a.contact
+{
+    padding: 0%;
+    text-decoration: underline;
+    color:rgb(0, 0, 241);
+}
+.contact:hover{
+    background-color: #506C8B;
+    color:white;
+}
+
+table.create, table.create td
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding: 0.5em;
+    border-style: dashed;
+    border-collapse: collapse;
+    border-color: #6B442E;
+}
+
+table.create thead, table.create th
+{
+    text-align: center;
+    padding: 0.5em;
+}
+
+.star{
+    color: red;
+}
+
+h5{
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.mailbutton{
+    background-color: #506C8B;
+    color:white;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+.mailbutton:hover{
+    background-color: white;
+    color: black;
+}
+
+/*fieldset element as wrapper for create and mailing list grid layout*/
+
+fieldset{
+    display: grid;
+    grid-template-columns: 250px 250px;
+    gap: 25px;
+    justify-content: center;
+    padding: 25px;
+    border: none;
+}
+
+label{
+    text-align: left;
+    grid-column: 1/2;
+}
+
+input{
+    grid-column: 2/3;
+}
+
+#reset{
+    grid-column: 1/2;
+}
+
+/*Container for grid layout of contact page*/
+#container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#hrs{
+    grid-column: 2/3;
+}
+
+#mailing{
+    grid-column: 2/3;
+    padding: 25px;
+}
+
+
+

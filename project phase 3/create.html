@@ -1,0 +1,105 @@
+<!--
+Seniz Ozdemir
+11-11-2022
+IT202-001
+Semester Project Phase 2
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta lang="en" />
+    <title>The Last Word - Add a Book</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <script type="text/javascript" language="javascript" src="scripts/bookstore.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>The Last Word</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a class="active" href="create.html">Create</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="center">
+      <h2>Add a Book Form</h2>
+      <form method="post" action="http://www.randyconnolly.com/tests/process.php" id="forms">
+        
+        <fieldset>
+           
+          <label for="title">Title:<span class="star">*</span></label>
+          <input type="text" name="book_title" 
+          minlength="1" maxlength="255"
+          id="Title"/>
+
+          <label for="genre">Genre:<span class="star">*</span></label>
+          <select name="genre" id="Genre">
+            <option disabled selected value> -Select an option- </option>
+            <option>Action and Adventure</option>
+            <option>Dystopian</option>
+            <option>Fantasy</option>
+            <option>Horror</option>
+            <option>Nonfiction</option>
+            <option>Romance</option>
+            <option>Science Fiction</option>
+            <option>Thriller</option>
+          </select>
+
+          <label for="bookID">Book Code:<span class="star">*</span></label>
+          <input
+            placeholder="Enter 6-10 alphanumeric characters"
+            type="text"
+            name="bookID"
+            minlength="6"
+            maxlength="10"
+            pattern="[A-Za-z0-9]*"
+            id="BookID"
+          />
+
+          <label for="price">Price:<span class="star">*</span></label>
+          <input type="number" name="price" step="0.01" 
+          min="0.01"
+          max="99999999.99"
+          id="Price"
+          />
+
+          <label for="copies">Number of copies available:<span class="star">*</span></label>
+          <input type="number" name="copies" 
+          min="0" id="Copies"/>
+
+          <label for="description">Description</label>
+          <textarea
+            placeholder="Enter a plot synopsis/description"
+            name="description"
+            rows="5"
+            cols="50"
+            minlength="10"
+            maxlength="255"
+            id="description"          
+          ></textarea>
+          <input id="reset" type="reset" />
+          <input id="submit" type="submit" />
+          
+        </fieldset>
+      </form>
+
+      <h5>Fields marked with <span class="star">*</span> are required.</h5>
+    </section>
+
+    <footer>
+      <h6>
+        Seniz Ozdemir<br />11-11-2022<br />IT202-001<br />Semester Project Phase
+        2
+      </h6>
+    </footer>
+  </body>
+</html>
